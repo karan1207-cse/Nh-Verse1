@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(253, 233, 204, 0.9);
+    color: #333;
+}
+.navbar {
+    background-color: rgb(244, 211, 149);
+    height: 80px;
+    display: flex;
+    width: 100%;
+}
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 50px;
+    margin-top: 55px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navlogo {
+    height: 80px;
+    width: 80px;
+    margin-right: 200px;
+}
+.logo {
+    background: none;
+    background-image: url(nhlogo.png);
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+}
+.nav-srh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 600px;
+    margin-top: 30px;
+}
+.search {
+    font-size: 1.1rem;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+.srhicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 30px;
+    margin: 10px;
+}
+.sidebar {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.items {
+    margin: 0px 10px 20px;
+    font-size: 1.1rem;
+}
+.display {
+    background-color: rgba(253, 233, 204, 0.705);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: -20px;
+}
+.dis-wel {
+    max-width: 70%;
+    transform: scale(0.8);
+    animation: popup 1s ease forwards;
+}
+.dis-img img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 70px;
+    transform: scale(0.8);
+    animation: popup 1s ease forwards;
+}
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.welcome {
+    font-size: 4rem;
+    font-weight: 400;
+}
+.nhverse {
+    font-size: 6rem;
+    font-weight: 400;
+}
+.wel-discrip {
+    display: inline;
+    font-size: larger;
+}
+.wel-discrip p {
+    margin-top: 5px;
+}
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgba(253, 233, 204, 0.705);
+    margin-bottom: 100px;
+}
+.image-card {
+    text-align: center;
+    width: 30%;
+}
+.image-card img {
+    width: 100%;
+    height: 200px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+    animation: popup 1s ease forwards;
+}
+.image-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 30px;
+    font-weight: bold;
+    transform: scale(0.8);
+    animation: popup 1s ease forwards;
+}
+.thankyou {
+    font-size: 1.3rem;
+    background-color: rgb(67, 65, 65);
+    color: aliceblue;
+    text-align: center;
+}
+.support {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #737272;
+    color: rgb(198, 206, 206);
+    margin-bottom: 10px;
+}
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.image-row .image-card:nth-child(1) img {
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 1.5);
+}
+.image-row .image-card:nth-child(2) img {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 1.5);
+}
+.image-row .image-card:nth-child(3) img {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1.5);
+}
+#sidebar ul {
+    text-decoration: none;
+    background: none;
+    list-style: none;
+    height: auto;
+}
+#togglebtn {
+    position: sticky;
+    text-decoration: none;
+    list-style: none;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#togglebtn:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.hideitems {
+    display: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+.show {
+    display: block;
+}
